@@ -1,0 +1,33 @@
+body{
+    background-color: #251351;
+}
+
+h1{
+    color: #251351;
+    font-family: 'Glass Antiqua', sans-serif;
+}
+
+header{
+    background-color: #FCDFA6;
+
+}
+form{
+    display: flex;
+    font-family: "Figtree", sans-serif;
+    color: #FCDFA6;
+
+}
+
+input[type=text]{
+    width: 50%;
+    display: flex;
+    flex-wrap: wrap;
+}
+label, input{
+    display: block;
+}
+
+img{
+    width: 50%;
+    mix-blend-mode: exclusion;
+}
