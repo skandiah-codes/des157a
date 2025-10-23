@@ -12,7 +12,7 @@
 
 <script>
 
-    var food = ["pizza", "pasta", "cheese"];
+    var food = ["pizza", "pasta", "cheese"]; //stored the food into an array
     var correctFood = "cheese";
     var foodPrompt = prompt('what am i eating while working on this? pizza, pasta, or cheese?', ' ');
     var info = document.querySelector('#cheese')
@@ -22,10 +22,10 @@
         for(let i=0; i < food.length; i++){
         if(foodPrompt.toLowerCase() === food[i])
         {
-            correct = true;
+            correct = true; // //if the user puts cheese the following info will be displayed within the div, shifting the "text" to other information
             if(foodPrompt.toLowerCase() === correctFood){
                 info.innerHTML = "<p>how'd you know?</p>"
-            } else{
+            } else{ //if the user puts pizza or pasta, the div is once again change to notify the user the information is incorrect
                 info.innerHTML = "<p>hmm no... let's try again. reload the page!</p>"
             }
 
