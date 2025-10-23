@@ -3,16 +3,38 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>experiment 2</title>
 </head>
 <body>
-       
+       <h1>experiment 2</h1>
+       <div id = "cheese"><p>text</p></div>
 </body>
 
 <script>
-    var food = ["pizza", "pasta", "cheese"];
-     var food = prompt('what am i eating while working on this? pizza, pasta, or cheese?', ' ');
 
+    var food = ["pizza", "pasta", "cheese"];
+    var randomFood = Math.floor(Math.random() * food.length);
+    var correctFood = food[randomFood];
+    var foodPrompt = prompt('what am i eating while working on this? pizza, pasta, or cheese?', ' ');
+    var info = document.querySelector('#cheese')
+
+    let correct = false;
+    if (foodPrompt) {
+        for(let i=0; i < food.length; i++){
+        if(foodPrompt.toLowerCase() === food[i])
+        {
+            correct = true;
+            if(foodPrompt.toLowerCase() === correctFood){
+                info.innerHTML = "<p>how'd you know?</p>"
+            } else{
+                info.innerHTML = "<p>hmm no... let's try again. reload the page!</p>"
+            }
+
+        }
+    }
+    }
+
+    
 
 </script>
 </html>
