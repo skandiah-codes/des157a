@@ -1,33 +1,64 @@
-body{
-    background-color: #251351;
+body {
+    font-family: "Figtree", sans-serif;
+    background-color: #5588CE;
+}
+main{
+    padding-left: 10%;
+    padding-right: 0%;
+    padding-top: 10%;
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
 }
 
 h1{
-    color: #251351;
-    font-family: 'Glass Antiqua', sans-serif;
+    color: #F5F5E9;
 }
 
-header{
-    background-color: #FCDFA6;
-
+section{
+    color: #5588CE;
+    max-width: 25%; 
+    margin: 10% auto; 
+    padding: 20%;
+    border: 1px solid #F5F5E9;
+    border-radius: 5px;
+    background-color: #F5F5E9;
 }
-form{
-    display: flex;
-    font-family: "Figtree", sans-serif;
-    color: #FCDFA6;
-
-}
-
-input[type=text]{
-    width: 50%;
-    display: flex;
-    flex-wrap: wrap;
-}
-label, input{
+#madlib-questions {
     display: block;
 }
 
+form{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
 img{
-    width: 50%;
-    mix-blend-mode: exclusion;
+    mix-blend-mode: color-burn;
+
+}
+
+button{
+    background-color: #5588CE;
+    font-family: "Figtree", sans-serif;
+    color: #F5F5E9;
+    padding: 5%;
+    border: 0;
+    border-radius: 3%;
+}
+
+@media (max-width: 700px) {
+    main {
+        flex-direction: column;
+        padding-left: 10%;
+        padding-right: 10%;
+        gap: 20px;
+    }
+
+    section {
+        max-width: 100%;
+        margin: 0 auto;
+        padding: 10%;
+    }
 }
