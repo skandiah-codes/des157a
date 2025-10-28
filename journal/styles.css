@@ -22,13 +22,46 @@ header{
 }
 
 .info p{
-    width: 50%;
+    width: 100%;
+    max-width: 600px;
 }
 
 .info a{
     text-decoration: none;
+    color: rgb(255, 0, 221);
 }
 
 .info a:hover{
-    color: rgb(255, 0, 221);
+    color: rgb(103, 94, 196);
+}
+
+img{
+    display: block;
+    margin: 0;
+
+}
+
+@media (max-width: 480px) {
+    body {
+        padding-left: 3%;
+        padding-right: 3%;
+        padding-top: 2%;
+    }
+
+    .info {
+        padding: 5%;
+    }
+
+    .info p {
+        width: 100%;
+        font-size: 0.95rem;
+    }
+
+    header h1 {
+        font-size: 1.5rem;
+    }
+
+    header p {
+        font-size: 0.9rem;
+    }
 }
