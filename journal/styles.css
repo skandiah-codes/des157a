@@ -38,7 +38,12 @@ header{
 img{
     display: block;
     margin: 0;
+    padding-bottom: 1%;
 
+}
+
+#studio2{
+    color: rgb(255, 0, 221);
 }
 
 @media (max-width: 480px) {
