@@ -7,7 +7,6 @@ body{
 section#first{
     display: flex;
     flex-direction: column; 
-    align-items: center;
     gap: 1rem;
 
 }
@@ -19,14 +18,18 @@ section#first img{
 section#items{
     display: flex;
     flex-direction: column; 
-    align-items: center;
     gap: 1rem;
 
 }
 section#items img{
     height: auto;
     mix-blend-mode: multiply;
+    width: 75%;
 
+}
+
+#purse{
+    margin-top: -50%;
 }
 
 
