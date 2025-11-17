@@ -7,11 +7,25 @@ header#first{
     flex-direction: column; 
     gap: 1rem;
 
+
+}
+h1{
+    text-align: center;
+}
+
+p{
+    text-align: center;
+}
+/*i wanted to have a bar that plays around with different blending modes as you scroll*/
+header{
+    background-color: #ce2984;
+    mix-blend-mode: color-dodge;
+    padding: 10%;
 }
 #purse{
     margin-top: -20%;
-    height: 100%;
-    width: 100%;
+    height: 50%;
+    width: 50%;
     mix-blend-mode: multiply;
     position: fixed;
 }
@@ -27,19 +41,113 @@ header#first{
 section#s1 img.items{
     height: auto;
     mix-blend-mode: multiply;
-    width: 75%;
-
 }
 
+img{
+    mix-blend-mode: multiply;
+}
 
 header{
     z-index: 100;
     position: fixed;
 }
 
-.bgcolor1 { background-color: #f8edcb; transition: all 1s;}
-.bgcolor2 { background-color: #eaf8cb; transition: all 1s;}
-.bgcolor3 { background-color: #cbeef8; transition: all 1s;}
-.bgcolor4 { background-color: #dfcbf8; transition: all 1s;}
-.bgcolor5 { background-color: #f8cbe4; transition: all 1s;}
+
+
+footer{
+    text-align: center;
+}
+
+.fade-target {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: opacity 0.8s ease, transform 0.8s ease;
+}
+
+.fade-in {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* makes the markers that track falling placement invisible*/
+.bgcolor1 { background-color: #1b774e; transition: all 1s;}
+.bgcolor2 { background-color: #ff48ea; transition: all 1s;}
+.bgcolor3 { background-color: #8be6ff; transition: all 1s;}
+.bgcolor4 { background-color: #ed884a; transition: all 1s;}
+.bgcolor5 { background-color: #ce2984; transition: all 1s;}
+.bgcolor6 { background-color: #7281f3; transition: all 1s;}
+.bgcolor7 { background-color: #50ffca; transition: all 1s;}
+.bgcolor8 { background-color: #ffe550; transition: all 1s;}
+
+
+
+/*  from when i tried different animation work*/
+/*.s1 .item, .s1 p {
+    animation-range: entry 0% contain 50%;
+}
+
+.s2 .item, .s2 p {
+    animation-range: entry 10% contain 60%;
+}
+
+.s3 .item, .s3 p {
+    animation-range: entry 20% contain 70%;
+} */
+
+/* media query for responsive design */
+@media (min-width: 900px) {
+
+    body {
+        padding: 0 10%;
+        font-size: 1.2rem;
+    }
+
+    header#first {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        padding: 5%;
+    }
+
+    #purse {
+        width: 30%;
+        height: auto;
+        margin-top: 0;
+        position: fixed;  
+        right: 5%;
+        top: 5%;
+    }
+
+
+    section {
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        gap: 4rem;
+        min-height: 70vh;
+        padding: 4rem 0;
+    }
+
+
+    section .item {
+        width: 350px;
+        max-width: 40%;
+        height: auto;
+    }
+
+
+    section p {
+        max-width: 40%;
+        font-size: 1.3rem;
+        line-height: 1.6;
+    }
+
+    footer {
+        margin-top: 5rem;
+        padding: 4rem 0;
+        font-size: 1.2rem;
+    }
+}
+
+
 
