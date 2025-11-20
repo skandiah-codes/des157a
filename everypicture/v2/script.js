@@ -47,9 +47,9 @@
 
     document.addEventListener("DOMContentLoaded", function () {
 
-    var items = document.querySelectorAll(".fade-target");
+    const items = document.querySelectorAll(".fade-target");
 
-    var observer = new IntersectionObserver(function (entries, observer) {
+    const observer = new IntersectionObserver(function (entries, observer) {
         entries.forEach(function (entry) {
 
             if (entry.isIntersecting) {
