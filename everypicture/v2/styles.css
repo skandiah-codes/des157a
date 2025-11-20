@@ -43,8 +43,9 @@ section#s1 img.items{
     mix-blend-mode: multiply;
 }
 #circle {
-    width: 100%;
-    height: 100%;
+    width: 250px;
+    height: 250px;
+    margin: 2rem auto; 
     border-radius: 50%;
     background-color: rgb(255, 255, 255);
     mix-blend-mode: exclusion;
@@ -166,6 +167,18 @@ footer{
         padding: 4rem 0;
         font-size: 1.2rem;
     }
+}
+
+#circle {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    background-color: rgb(255, 255, 255);
+    mix-blend-mode: exclusion;
+    animation: spin 4s linear infinite;
+    display: flex;
+    justify-content: center;
+
 }
 
 
