@@ -126,3 +126,61 @@ footer a:hover{
       }
 
 }
+
+@media (max-width: 600px) {
+
+    #banner{
+        padding: 20% 5% 5%;
+        text-align: center;
+    }
+
+    main{
+        flex-direction: column;
+        align-items: center;
+        padding-top: 5%;
+    }
+
+    .contentbox{
+        width: 85vw;         
+        height: auto;         
+        padding: 20px 10px;
+    }
+
+    .contentbox h2{
+        font-size: 1.4rem;
+    }
+
+    ul li{
+        font-size: 1.1rem;
+        text-align: center;
+    }
+
+    footer{
+        font-size: 0.9rem;
+        padding: 6% 3%;
+    }
+
+    .fishie{
+        width: 120px;
+        top: 20%;
+        animation-duration: 14s;
+    }
+}
+
+
+@media (min-width: 600px) and (max-width: 900px) {
+
+    main{
+        justify-content: center;
+        gap: 40px;
+    }
+
+    .contentbox{
+        width: 300px;
+        height: auto;
+    }
+
+    .fishie{
+        width: 150px;
+    }
+}
