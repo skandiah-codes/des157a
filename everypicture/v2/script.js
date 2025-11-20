@@ -47,14 +47,19 @@
 
     document.addEventListener("DOMContentLoaded", function () {
 
-    var items = document.querySelectorAll(".fade-target"); //inspired by example of changing sections text sizes, instead has the text fade in
+    var items = document.querySelectorAll(".fade-target");
 
     var observer = new IntersectionObserver(function (entries, observer) {
         entries.forEach(function (entry) {
+
             if (entry.isIntersecting) {
+             
                 entry.target.classList.add("fade-in");
-                observer.unobserve(entry.target)
+            } else {
+
+                entry.target.classList.remove("fade-in");
             }
+
         });
     }, {
         threshold: 0.2
