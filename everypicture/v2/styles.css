@@ -43,9 +43,8 @@ section#s1 img.items{
     mix-blend-mode: multiply;
 }
 #circle {
-    width: 250px;
-    height: 250px;
-    margin: 2rem auto; 
+    width: 100%;
+    height: 100%;
     border-radius: 50%;
     background-color: rgb(255, 255, 255);
     mix-blend-mode: exclusion;
@@ -79,7 +78,7 @@ footer{
 .fade-target {
     opacity: 0;
     transform: translateX(30px);
-    transition: opacity 0.5s ease, transform 5s ease translateX(30px);
+    transition: opacity 0.5s ease, transform 5s ease;
 }
 
 .fade-in {
