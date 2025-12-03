@@ -1,0 +1,54 @@
+body {
+    font-family: "Figtree", Arial;
+    color: #3C2C94;
+    padding: 50px;
+    line-height: 1.5em;
+    background-color: #FFF9DF;
+
+}
+
+button { 
+    padding: 10px;
+    border-radius: 15px;
+    background-color: #3C2C94;
+    color: #FFF9DF;
+    border-color: transparent;
+}
+
+div {
+    padding: 20px;
+    /* border: 5px solid #3C2C94;
+    border-radius: 10px; */
+}
+
+#gamecontrol, #score {
+    background-color: #FFF9DF;
+}
+
+#game {
+    background-color:#FFF9DF;
+}
+#actions {
+    background-color: #FFF9DF;
+}
+img{
+    max-width: 10%;
+    max-height: 10%;
+}
+
+h1, h2{
+ font-family: "Space Mono", Arial, Helvetica, sans-serif;
+}
+
+#holdEverything{
+    border: 5px solid #3C2C94;
+    border-radius: 10px; 
+}
+
+#instructionoverlay{
+    background-color: #3C2C94;
+    color: #FFF9DF;
+    border-radius: 10px;
+}
+
+
