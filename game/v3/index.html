@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game of pig</title>
+	<link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+	<link href="styles.css" rel="stylesheet">
+	<script src="script.js" defer></script>
+</head>
+<body>
+    <section id="overlay" class="hidden">
+    <div id="instructionoverlay">   
+    <h1>game of pig!</h1>
+    <h2>how to play</h2>
+    <p>play against a friend to see who is the cooler pig! click to roll the dice. the numbers you roll will contribute to your total score. <strong>the first player to get to 30 wins!</strong>  </p>
+
+    <p>easy, right? not really... every time you roll a 1 the turn goes to the next player. and if you roll two ones? that's called <strong>snake eyes</strong> your score resets!</p>
+
+    <button id="start">may the best pig win...</button>
+</div>
+    </section>
+    
+ <div id="holdEverything">
+     <div id="gamecontrol">
+        <img class="logo" src="imgs/logo.jpg">
+        <button id="startgame">start a game</button>
+    </div>
+
+
+
+    <div id="game">
+        <div id="playerImage">
+        <img src="imgs/p1PreRoll.jpg" alt="player 1" />
+        <img class="die1" src="imgs/1die.jpg" alt="die 1">
+        <img class="die1" src="imgs/1die.jpg" alt="die 1">
+        <img src="imgs/p2PreRoll.jpg" alt="player 2"/>
+    </div>
+    </div>
+    <div id="actions">
+        <!-- <img src="imgs/player1PreRoll.jpg" alt="player 1" />
+        <img src="imgs/player2PreRoll.jpg" alt="player 2"/> -->
+    </div>
+    <div id="score">
+        <p><strong>scoreboard</strong></p>
+    </div>
+
+     <!--- *check basic slideshow for img shift. have imgs shift when turns shift
+    add instruction overlay and then links it into a question marks-->
+ </div>
+   
+</body>
+</html>
+
+<!--look into transitions of the die rolling
+add noise for buttons-->

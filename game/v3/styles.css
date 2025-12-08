@@ -1,0 +1,197 @@
+body {
+    font-family: "Figtree", Arial;
+    color: #3C2C94;
+    padding: 50px;
+    line-height: 1.5em;
+    background-color: #FFF9DF;
+
+}
+
+button { 
+    padding: 10px;
+    border-radius: 15px;
+    background-color: #3C2C94;
+    color: #FFF9DF;
+    border-color: transparent;
+}
+
+/* div {
+    padding: 20px;
+    /* border: 5px solid #3C2C94;
+    border-radius: 10px; 
+    } */
+
+#gamecontrol {
+    margin-top: 2%;
+    background-color: #FFF9DF;
+}
+
+
+#game {
+    text-align: center;
+    background-color:#FFF9DF;
+
+}
+#actions {
+    text-align: center;
+    background-color: #FFF9DF;
+}
+img{
+    max-width: 20%;
+    max-height: 20%;
+}
+
+h1, h2{
+ font-family: "Space Mono", Arial, Helvetica, sans-serif;
+}
+
+#holdEverything{
+    border: 5px solid #3C2C94;
+    border-radius: 10px; 
+}
+#overlay{
+    position: absolute;
+    background-color: #3c2c94b8;
+    top: 0;
+    left: 0;
+    width: 150vw;
+    height: 200vh;
+    z-index: 999;
+}
+#instructionoverlay{
+    background-color: #3C2C94;
+    color: #FFF9DF;
+    border-radius: 10px;
+    border: 10px #FFF9DF;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-83%, -75%);
+    padding: 5%;
+    z-index: 1000;
+}
+#instructionoverlay h1{
+    text-align: center;
+}
+#instructionoverlay h2{
+    text-align: center;
+}
+
+#start {
+    background-color: #FFF9DF;
+    color: #3C2C94;
+    display: block;
+    margin: 0 auto;
+}
+
+.hidden { 
+    display: none; 
+}
+.showing { 
+    display: block; 
+}
+/* #playerImage{
+    display: flex;
+    justify-content: space-around;
+} */
+/* #playerImage img{
+    max-width: 10%;
+    max-height: 10%;
+} */
+
+#score{
+    text-align: center;
+    color: #FFF9DF;
+    background-color: #3C2C94;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    max-width: 25%;
+    transform: translate(250%, 4%);
+    padding: 10px;
+}
+
+#gamecontrol{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#gamecontrol button{
+    max-width: 25%;
+    margin: auto;
+    display: block;
+}
+
+#gamecontrol h2{
+    text-align: center;
+}
+
+/* #playerImage{
+    display: flex;
+    justify-content: space-around;
+} */
+
+
+.actionPigs{
+    max-width: 20%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.gameSetup{
+     display: flex;
+    justify-content: space-around;
+}
+
+.logo{
+    margin: auto;
+    max-width: 25%;
+    display: block;
+    padding-bottom: 2%;
+}
+
+.generalInfo{
+    text-align: center;
+}
+
+#roll{
+    margin: auto;
+    display: block;
+}
+
+#gameplay{
+    display: flex;
+    justify-content: space-around;
+}
+
+#gameplay img{
+    max-width: 25%;
+    max-height: 25%;
+}
+
+#rollagain{
+    margin-right: 2%;
+}
+
+#actionarea{
+    margin: auto;
+    display: block;
+}
+
+@keyframes shake {
+  0% { transform: rotate(0deg) translateX(0); }
+  20% { transform: rotate(20deg) translateX(6px); }
+  40% { transform: rotate(-20deg) translateX(-6px); }
+  60% { transform: rotate(20deg) translateX(6px); }
+  80% { transform: rotate(-20deg) translateX(-6px); }
+  100% { transform: rotate(0deg) translateX(0); }
+}
+
+.die {
+    width: 25%;
+}
+
+.die.shaking {
+    animation: shake 1s ease;
+}
+
